@@ -236,11 +236,11 @@ function BearVsBull()
 		incr++;
 	});	
 }
-function GetTimeNow(add)
-{	
+function GetTimeNow(z)
+{
  	var d = new Date();
- 	d.setMinutes(d.getMinutes() - add);
-	return d.getDay()+""+d.getHours()+""+d.getMinutes();	
+    	var s = d.getDay()+""+d.getHours()+""+d.getMinutes()
+	return s - z;	
 }
 </script>
 </body>
