@@ -241,7 +241,7 @@ function GetTimeNow(i)
 	var d = new Date(Date.now());
 	d.setUTCMinutes( d.getUTCMinutes() - parseInt( i / 60 ) * 60 - i);
 	d.setUTCHours( d.getUTCHours() + parseInt( i / 60 ) );
-	return pad(d.getUTCHours())+''+pad(d.getUTCMinutes();
+	return pad(d.getUTCHours())+''+pad(d.getUTCMinutes());
 }
 function pad(d) {
     return (d < 10) ? '0' + d.toString() : d.toString();
